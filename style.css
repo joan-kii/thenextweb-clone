@@ -1,0 +1,48 @@
+/* Box Model */
+
+/* * {
+    outline: 2px solid red;
+  } */ 
+
+
+/* Global */
+
+@font-face {
+  font-family: Shentox;
+  src: url("https://next.tnwcdn.com/assets/next/fonts/shentox-medium.woff2") format("woff2");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Graphik-regular;
+  src: url("https://next.tnwcdn.com/assets/next/fonts/graphik-regular.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Graphik-medium;
+  src: url("https://next.tnwcdn.com/assets/next/fonts/graphik-medium.woff2") format("woff2");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: TNW-Avalon-bold;
+  src: url("https://next.tnwcdn.com/assets/next/fonts/tnw-avalon-bold.woff2") format("woff2");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Trump-Soft-Pro-bold;
+  src: url("https://next.tnwcdn.com/assets/next/fonts/trump-soft-pro-bold.woff2") format("woff2");
+  font-weight: 700;
+}
+
+body {
+  width: 100vw;
+}
+
+/* Topbar */
+
+.nav-logo svg {
+  height: 1rem;
+}
