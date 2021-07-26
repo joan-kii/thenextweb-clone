@@ -39,10 +39,59 @@
 
 body {
   width: 100vw;
+  font-family: Graphik-regular, sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+a {
+  color: #505666;
+  text-decoration: none;
 }
 
 /* Topbar */
 
+.header {
+  top: 0;
+  position: sticky;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 0 48px rgba(0,0,0,.5);
+}
+
+.nav-logo {
+  position: absolute;
+  left: 1.5rem;
+  height: 3rem;
+  width: 4.125rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+}
+
 .nav-logo svg {
   height: 1rem;
+  cursor: pointer;
+}
+
+.top-bar {
+  display: flex;
+  flex: 1;
+}
+
+.nav-link {
+  padding-left: 1rem;
+  padding-top: .1875rem;
+  padding-right: 1rem;
+  font-family: Shentox, sans-serif;
+  font-size: .875rem;
+  letter-spacing: .08rem;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+
+.arrow-down {
+  color: #999;
 }
