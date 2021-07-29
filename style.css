@@ -1,8 +1,8 @@
 /* Box Model */
 
-* {
+/* * {
     outline: 2px solid red;
-  }
+  } */
 
 /* Global */
 
@@ -37,7 +37,7 @@
 }
 
 body {
-  width: 100vw;
+  width: 100%;
   font-family: Graphik-regular, sans-serif;
   font-size: 1.5rem;
   line-height: 1.5;
@@ -180,11 +180,12 @@ h1 {
 /* Content Header */
 
 .header-section {
+  position: relative;
   padding-top: 4em;
   width: 100%;
   display: flex;
   justify-content: space-around;
-  margin-bottom: 1em;
+  margin-bottom: 3em;
 }
 
 .logo-lg {
@@ -215,10 +216,41 @@ h1 {
 /* Showcase Grid */
 
 .showcase {
+  position: relative;
   margin: 0 auto;
-  padding: 0 2em;
+  padding: 0 2.5em;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(4, 144px);
+  grid-template-rows: repeat(5, 125.3333px);
+  grid-gap: .25em;
 }
+
+.showcase-article {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-image {
+  height: 100%;
+}
+
+.card-image::after {
+  position: absolute;
+  top: 0;
+  right: -1px;
+  bottom: -1px;
+  left: -1px;
+  content: "";
+  background: linear-gradient(180deg, transparent 0, #000);
+}
+
+.showcase-article:first-child {
+  grid-column: 1/5;
+  grid-row: 1/span 3;
+}
+
+.image {
+  width: 100%;
+}
+
