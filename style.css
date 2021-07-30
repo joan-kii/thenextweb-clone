@@ -57,6 +57,13 @@ h1 {
   color: rgb(80,86,102);
 }
 
+h6 {
+  font-family: Shentox, sans-serif;
+  letter-spacing: .08em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
 /* Topbar */
 
 .header {
@@ -231,6 +238,10 @@ h1 {
   overflow: hidden;
 }
 
+.showcase-article:hover img {
+  transform: scale(1.01);
+}
+
 .card-image {
   height: 100%;
 }
@@ -245,12 +256,76 @@ h1 {
   background: linear-gradient(180deg, transparent 0, #000);
 }
 
+.image {
+  width: 100%;
+  transform: scale(1.03);
+  transition: transform .5s ease;
+}
+
+.article-title {
+  position: absolute;
+  bottom: 0;
+  padding: 1em;
+}
+
+.article-label {
+  margin-bottom: .15em;
+  color: #fff;
+  font-size: .5em
+}
+
+.artticle-heading {
+  margin-bottom: .25em;
+  text-align: left;
+}
+
+.article-heading a {
+  color: #fff;
+}
+
+/* Showcase Grid First Child */
+
 .showcase-article:first-child {
   grid-column: 1/5;
   grid-row: 1/span 3;
 }
 
-.image {
-  width: 100%;
+.showcase-article:first-child .article-heading {
+  font-family: TNW-Avalon-bold, sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: -1px;
+  line-height: 1;
 }
 
+/* Showcase Grid Second Child */
+
+.showcase-article:nth-child(2) {
+  grid-column: 5/7;
+  grid-row: 1/span 2;
+}
+
+.showcase-article:nth-child(2) .article-heading {
+  font-family: Graphik-medium, sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.15;
+}
+
+/* Showcase Grid Third Child */
+
+.showcase-article:nth-child(3) {
+  grid-column: 1/5;
+  grid-row: 4/span 2;
+}
+
+.article-ad-panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
