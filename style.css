@@ -57,6 +57,11 @@ h1 {
   color: rgb(80,86,102);
 }
 
+h2 {
+  font-family: TNW-Avalon-bold, sans-serif;
+}
+
+h2,
 h3,
 h4 {
   line-height: 1.5;
@@ -541,7 +546,110 @@ h6 {
     flex-direction: column;
   }
 
+  .popular-articles-grid {
+    padding: 0;
+  }
+
   .popular-articles-list li {
     padding: .5em;
+  }
+}
+
+/* Latest Stories */
+
+.latest-stories {
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+.latest-stories-wrapper {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  max-width: 80rem;
+}
+
+.latest-stories-heading h2 {
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+}
+
+.latest-stories-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.latest-stories-grid li {
+  flex-basis: 25%;
+  max-width: 25%;
+  border: .5em solid transparent;
+  display: flex;
+  flex-direction: column;
+}
+
+.latest-stories-grid img {
+  width: 100%;
+}
+
+.story-title {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.story-title h4 {
+  line-height: 1.5;
+}
+
+.story-title p {
+  font-size: .875rem;
+  color: #a7aab2;
+}
+
+@media screen and (max-width: 1024px) {
+
+  .latest-stories-grid li {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .latest-stories-heading h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .latest-stories-grid li {
+    flex-basis: 100%;
+    max-width: 100%;
+    flex-direction: row;
+  }
+
+  .latest-stories-grid a {
+    position: relative;
+    flex-basis: 25%;
+    padding-top: 25%;
+    margin-right: 1.5rem;
+    border-radius: 9999px;
+    overflow: hidden;
+  }
+  
+  .latest-stories-grid img {
+    position: absolute;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    object-fit: cover;
+    background-position: 50% 50%;
+    object-position: 50% 50%;
+  }
+
+  .story-title {
+    flex-basis: 75%;
   }
 }
