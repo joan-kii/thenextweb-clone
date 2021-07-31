@@ -57,6 +57,22 @@ h1 {
   color: rgb(80,86,102);
 }
 
+h3,
+h4 {
+  line-height: 1.5;
+}
+
+h3 {
+  font-family: Trump-Soft-Pro-bold, sans-serif;
+  letter-spacing: .01em;
+  font-size: 2rem;
+}
+
+h4 {
+  font-family: Graphik-medium, sans-serif;
+  font-feature-settings: "ss01" 1, "ss02" 1, "ss03" 1;
+}
+
 h6 {
   font-family: Shentox, sans-serif;
   letter-spacing: .08em;
@@ -371,6 +387,14 @@ h6 {
   grid-row: 3/span 3;
 }
 
+.small-screen-ad {
+  display: none;
+}
+
+.large-screen-ad {
+  display: block;
+}
+
 @media screen and (max-width: 1024px) {
   .showcase {
     grid-template-columns: repeat(2, 1fr);
@@ -407,5 +431,117 @@ h6 {
     font-size: 1.25rem;
     line-height: 1.15;
   }
+}
 
+@media screen and (max-width: 767px) {
+  .showcase {
+    padding: 0;
+    width: 100vw;
+    overflow: auto;
+    display: flex;
+  }
+
+  .showcase-article:first-child,
+  .showcase-article:nth-child(2),
+  .showcase-article:nth-child(4),
+  .showcase-article:last-child {
+    border: 8px solid transparent;
+    flex: 0 0 85vh;
+  }
+
+  .large-screen-ad {
+    display: none;
+  }
+
+  .small-screen-ad {
+    display: block;
+  }
+
+  .ad-panel-heading {
+    font-size: .8rem;
+  }
+
+  .showcase-article:first-child .article-heading {
+    font-family: Graphik-medium, sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.15;
+  }
+
+  .header-section {
+    margin-bottom: 0;
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 284px) {
+  .ad-panel-heading {
+    display: none;
+  }
+}
+
+/* Popular Articles */
+
+.popular-articles {
+  margin: 0 auto;
+  padding: 2em .5em;
+  background: #f7f8f8;
+}
+
+.popular-articles-header {
+  margin-bottom: 2.5em;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popular-articles-header h3 {
+  color: #a7aab2;
+}
+
+.popular-articles-grid {
+  padding: 0 3em;
+}
+
+.popular-articles-list {
+  margin: 1.5em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.popular-articles-list li {
+  padding: 1em;
+  flex: 1;
+}
+
+.popular-articles-item {
+  display: flex;
+}
+
+.popular-article-number {
+  color: #c09;
+  font-family: Trump-Soft-Pro-bold;
+  line-height: 1;
+  font-size: 38px;
+}
+
+.popular-articles-item h4 {
+  padding: 0 .8em;
+  font-size: 1rem;
+  color: #000;
+}
+
+.underline-hover:hover {
+  box-shadow: 0 2px 0 rgba(204,0,253,.33);
+}
+
+@media screen and (max-width: 1024px) {
+
+  .popular-articles-list {
+    flex-direction: column;
+  }
+
+  .popular-articles-list li {
+    padding: .5em;
+  }
 }
