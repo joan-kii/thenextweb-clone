@@ -85,6 +85,9 @@ h6 {
   text-transform: uppercase;
 }
 
+strong {
+  font-family: Graphik-medium, sans-serif;
+}
 /* Topbar */
 
 .header {
@@ -824,3 +827,113 @@ h6 {
     line-height: 1;
   }
 }
+
+/* Newsletter */
+
+.newsletter-subscribe {
+  padding: 2.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  background: #000;
+  background-image: url(https://next.tnwcdn.com/assets/next/img/spacesbg.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.newsletter-subscribe-form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.newsletter-subscribe-form form {
+  width: 100%;
+}
+
+.newsletter-subscribe-form h2 {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.newsletter-subscribe-form p {
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.newsletter-subscribe-form a {
+  color: #0cc;
+}
+
+.newsletter-input {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  border-radius: .25rem;
+  background-color: #fff;
+  box-shadow: 0 4px 24px rgba(0,0,0,.25);
+}
+
+.newsletter-input input {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 1rem 0;
+  order: 2;
+  flex: 1 1 auto;
+  font-size: 1rem;
+  border-style: none;
+}
+
+.newsletter-input svg {
+  margin: 0 .75rem;
+  order: 1;
+  width: 20px;
+  height: 20px;
+  color: #a7aab2;
+  fill: currentColor;
+  opacity: .5;
+}
+
+.newsletter-input button {
+  padding: 0 .75rem;
+  order: 3;
+  border-style: none;
+  appearance: none;
+  font-family: Graphik-medium, sans-serif;
+  font-size: .875rem;
+  color: #a7aab2;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.social-links-list {
+  margin-bottom: .5rem;
+  display: flex;
+}
+
+.social-links-list a {
+  display: block;
+  opacity: .5;
+  color: #fff;
+  fill: currentColor;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.social-links-list li:not(:first-child) {
+  margin-left: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+
+  .newsletter-subscribe-form h2 {
+    font-size: 2rem;
+  }
+}
+
+/* Showcase Video */
