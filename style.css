@@ -718,6 +718,7 @@ h6 {
   max-width: 100rem;
   padding-left: 2rem;
   padding-right: 2rem;
+  overflow: hidden;
 }
 
 .explore-channels-heading {
@@ -734,6 +735,7 @@ h6 {
   margin: -1.5rem 0 0 0;
   padding: 2rem 0;
   display: flex;
+  overflow-x: scroll;
 }
 
 .channel {
@@ -742,6 +744,7 @@ h6 {
 }
 
 .channel article {
+  height: 100%;
   padding: 2rem 1rem;
   text-align: center;
   background-size: cover;
@@ -784,4 +787,40 @@ h6 {
 
 .hardfork {
   background-image: url(https://img-cdn.tnwcdn.com/image?fit=260%2C235&url=https%3A%2F%2Fnext.tnwcdn.com%2Fassets%2Fnext%2Fimg%2Fbackdrop-s-hardfork.jpg&signature=77d9941cfc302cb2e25c39ab3043fa7b);
+}
+
+@media screen and (max-width: 1024px) {
+
+  .explore-channels-heading h2 {
+    margin-bottom: 2rem;
+  }
+
+  .explore-channels {
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+  }
+
+  .channels-grid {
+    padding: 2rem 1rem;
+  }
+
+  .channel {
+    flex-basis: calc(120px + 6rem);
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .explore-channels-heading {
+    justify-content: center;
+  }
+
+  .explore-channels-heading h2 {
+    margin-bottom: 2rem;
+    font-size: 1.75rem;
+    text-align: center;
+    line-height: 1;
+  }
 }
