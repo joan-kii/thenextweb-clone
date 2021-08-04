@@ -1063,7 +1063,108 @@ strong {
 @media screen and (max-width: 767px) {
 
   .showcase-video {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
+
+  .video-wrapper h2 {
+    margin-bottom: 2rem;
+    font-size: 1.75rem;
+    text-align: center;
+  }
+
+  .video-container {
+    margin-left: -1.8rem;
+    margin-right: -1.8rem;
+    display: block;
+  }
+
+  .video-heading {
+    padding: 1.5rem;
+  }
+
+  .playlist {
+    position: relative;
+    padding: .5rem 1rem;
+    width: 100%;
+  }
+
+  .playlist-scroller {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+  }
+
+  .playlist-video {
+    flex: 0 0 224px;
+  }
+
+  .scroller-fade {
+    display: none;
+  }
+}
+
+/* Showcase Partner */
+
+.showcase-partner {
+  padding: 6em 0 2em;
+}
+
+.partner-wrapper {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  max-width: 80rem;
+}
+
+.partner-grid {
+  margin: -.75rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.partner-text {
+  margin-bottom: 0;
+  padding-right: 1.5rem;
+  flex-grow: 0;
+  flex-shrink: 0;
+  text-align: left;
+  border: 0 solid transparent;
+  border-width: .75rem;
+}
+
+.partner-text h6 {
+  margin-bottom: .5rem;
+  font-family: Shentox, sans-serif;
+  letter-spacing: .08rem;
+  line-height: 1;
+}
+
+.partner-text h2 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  flex: 1 1 0%;
+}
+
+.partner-text p {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  font-size: 1.125rem;
+}
+
+.partner-button {
+  position: relative;
+  padding: 0 1.5rem;
+  display: inline-block;
+  background-color: #0cc;
+  color: #fff;
+  font-family: Graphik-medium, sans-serif;
+  font-size: 13px;
+  letter-spacing: .025rem;
+  line-height: 48px;
+  border-radius: .25rem;
+  cursor: pointer;
 }
