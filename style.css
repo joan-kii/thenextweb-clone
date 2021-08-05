@@ -1129,16 +1129,20 @@ strong {
 .partner-text {
   margin-bottom: 0;
   padding-right: 1.5rem;
+  flex-basis: 50%;
+  max-width: 50%;
   flex-grow: 0;
   flex-shrink: 0;
   text-align: left;
   border: 0 solid transparent;
   border-width: .75rem;
+  color: #505666;
 }
 
 .partner-text h6 {
   margin-bottom: .5rem;
   font-family: Shentox, sans-serif;
+  font-size: 1rem;
   letter-spacing: .08rem;
   line-height: 1;
 }
@@ -1146,7 +1150,10 @@ strong {
 .partner-text h2 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  line-height: 1;
+  letter-spacing: -.025rem;
   flex: 1 1 0%;
+  color: #000;
 }
 
 .partner-text p {
@@ -1167,4 +1174,125 @@ strong {
   line-height: 48px;
   border-radius: .25rem;
   cursor: pointer;
+}
+
+.partner-items-grid {
+  margin-bottom: 0;
+  padding-right: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 50%;
+  max-width: 50%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  align-items: center;
+  border: 0 solid transparent;
+  border-width: .75rem;
+}
+
+.partner-item {
+  position: relative;
+  display: flex;
+  flex-basis: 50%;
+  max-width: 50%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  align-items: center;
+  border: 0 solid transparent;
+  border-width: 1rem;
+}
+
+.partner-item img {
+  position: relative;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  display: block;
+  width: 7rem;
+  background-size: cover;
+  object-fit: cover;
+  background-position: 50% 50%;
+  object-position: 50% 50%;
+}
+
+.partner-item h4 {
+  margin-left: 1rem;
+  font-size: 1.125rem;
+  text-align: center;
+}
+
+.socialproof-wrapper {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.socialproof-wrapper ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.socialproof-wrapper li {
+  flex-basis: 12.5%;
+  max-width: 12.5%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  opacity: .5;
+  border: 0 solid transparent;
+  border-width: .25rem;
+}
+
+@media screen and (max-width: 1024px) {
+
+  .showcase-partner {
+    padding: 4rem 2rem;
+  }
+
+  .partner-item {
+    flex-direction: column;
+  }
+
+  .partner-item h4 {
+    margin-left: 0;
+    font-size: 1rem;
+  }
+
+  .socialproof-wrapper li {
+    flex-basis: 12.5%;
+    max-width: 12.5%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .partner-wrapper {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .partner-grid {
+    flex-direction: column;
+  }
+  
+  .partner-text,
+  .partner-items-grid {
+    margin-bottom: 2rem;
+    padding-right: 0;
+    text-align: center;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .partner-text h2 {
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+  }
+
+  .partner-item img {
+    width: 6rem;
+  }
 }
