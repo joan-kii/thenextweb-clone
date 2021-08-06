@@ -1295,17 +1295,23 @@ strong {
   .partner-item img {
     width: 6rem;
   }
+
+  .socialproof-wrapper li {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
 }
 
 /* Footer */
 
 .footer {
-  padding: 3em 0;
+  padding: 3.5rem 0;
   background-color: #000;
   color: #fff;
 }
 
 .footer-wrapper {
+  position: relative;
   margin-left: auto;
   margin-right: auto;
   padding-left: 2em;
@@ -1338,8 +1344,8 @@ strong {
 
 .social-links-list {
   margin-bottom: .5rem;
+  max-width: 100%;
 }
-
 .links-columns {
   padding-left: 0;
   flex-basis: 25%;
@@ -1373,4 +1379,17 @@ strong {
 .legal a {
   color: #fff;
   font-family: Graphik-medium, sans-serif;
+}
+
+@media screen and (max-width: 1024px) {
+
+  .left-column {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .links-columns {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
 }
