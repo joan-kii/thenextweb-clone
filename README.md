@@ -1,3 +1,7 @@
-# thenextweb-clone
+## [Live Demo](https://joan-kii.github.io/thenextweb-clone)
 
-[This](https://joan-kii.github.io/thenextweb-clone)  is a clone of the tnw.com site as a responsive design exercise. 
+## The Odin Project Exercise cloning the tnw.com site as a responsive design exercise.
+
+### Built with
+ - HTML
+ - CSS
